@@ -677,6 +677,14 @@
             { id: 20, name: "Titanium Ghost", route: "Coastal", routeName: "Space Coast", emoji: "🏎️", price: "\$3,400", duration: "5 Hours", distance: "310 km", type: "Aero Coupe", description: "Where rockets launch and dreams take flight. Aerodynamic perfection.", features: ["Aero Mode", "Launch Control", "Satellite Audio"], span: "col-span-6" }
         ];
 
+        const routeIcons = {
+            "Alpine": "⛰️",
+            "Coastal": "🌊",
+            "Desert": "🌵",
+            "Urban": "🏙️",
+            "Forest": "🌲",
+            "Arctic": "❄️"
+        };
 
         function renderCars(filter = 'all') {
             const grid = document.getElementById('carGrid');
