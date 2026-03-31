@@ -700,7 +700,7 @@
                     <div class="glass-card car-card ${car.span === 'col-span-6' ? 'featured' : ''}" onclick="openModal(${car.id})">
                         <div class="car-visual">
                             <span class="route-icon">${routeIcons[car.route]}</span>
-                          ${car.image ? `<img src="${car.image}" class="car-image">` : `<span class="car-emoji">${car.emoji}</span>`}
+                          ${car.image ? `<img src="${car.image}" class="car-image">` : `<span class="car-emoji">${car.emoji || "🚗"}</span>`}
 
                         </div>
                         <div class="car-content">
